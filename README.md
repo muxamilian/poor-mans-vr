@@ -1,1 +1,1 @@
-# [https://muxamilian.github.io/virtual-video-window/](https://muxamilian.github.io/virtual-video-window/)
+# [https://muxamilian.github.io/poor-mans-vr/](https://muxamilian.github.io/poor-mans-vr/)
