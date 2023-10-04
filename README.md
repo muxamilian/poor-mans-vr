@@ -6,3 +6,6 @@ https://github.com/muxamilian/poor-mans-vr/assets/1943719/e02a5766-1250-4549-baf
 
 # Demo on how to embed into a website (check out source code, very minimalistic)
 [https://muxamilian.github.io/poor-mans-vr/index_text.html](https://muxamilian.github.io/poor-mans-vr/index_text.html)
+
+# Acknowledgements
+A lot of code is recycled from [https://github.com/justadudewhohacks/face-api.js](https://github.com/justadudewhohacks/face-api.js)
