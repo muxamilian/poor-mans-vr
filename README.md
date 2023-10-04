@@ -1,5 +1,5 @@
 # Demo
-https://github.com/muxamilian/poor-mans-vr/assets/1943719/9f884121-fbb4-478f-9d79-dd3574d4294e
+https://github.com/muxamilian/poor-mans-vr/assets/1943719/f6129b8b-2210-428b-9be6-49bd140e7830
 
 # Full screen demo
 [https://muxamilian.github.io/poor-mans-vr/](https://muxamilian.github.io/poor-mans-vr/)
