@@ -114,6 +114,6 @@ async function run() {
   setTimeout(() => {if (Date.now() - window.last_updated > 5) {alert('There was an issue. Possible causes are:\n(1) Camera access didn\'t work\n(2) The device is in battery-saving mode\n(3) The internet connection is slow\n(4) You\'re not looking into the camera\nFix the problem(s) and reload the page.');}}, 5000);
 }
 
-addEventListener("DOMContentLoaded", () => {
+addEventListener("load", () => {
   run()
 });
