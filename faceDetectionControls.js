@@ -73,6 +73,10 @@ async function onPlay(videoEl) {
   setTimeout(() => onPlay(videoEl))
 }
 
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 async function run() {
   // load face detection and face landmark models
   await changeFaceDetector(TINY_FACE_DETECTOR)
@@ -82,7 +86,7 @@ async function run() {
   // to the video element
   const stream = await navigator.mediaDevices.getUserMedia({ video: {} })
   document.querySelector("body").insertAdjacentHTML("beforeend", 
-    '<div class="invisibleVideo"><video onloadedmetadata="onPlay(this)" id="inputVideo" autoplay muted playsinline></video></div>')
+    '<div class="invisibleVideo"><video onloadedmetadata="onPlay(this)" id="inputVideo" autoplay muted playsinline></video></div>');
   const videoElem = document.getElementById('inputVideo');
   videoElem.srcObject = stream
   window.tradeoff = 0.5;
@@ -94,8 +98,8 @@ async function run() {
   let video_index = 0;
   window.actual_videos.forEach((item) => {
     item.play();
-    console.log('Got video with a width of', item.scrollWidth, 'and a height of', item.scrollHeight, 
-      'css width', window.videos_to_change[video_index].style.width, 'css height', window.videos_to_change[video_index].style.height);
+    console.log('Got video with a width of', item.scrollWidth.toString(), 'and a height of', item.scrollHeight.toString(), 
+      'css width', window.videos_to_change[video_index].style.width.toString(), 'css height', window.videos_to_change[video_index].style.height.toString());
     window.videos_to_change_widths.push(item.scrollWidth);
     window.videos_to_change_heights.push(item.scrollHeight);
     if (window.videos_to_change[video_index].style.height.length == 0) {
