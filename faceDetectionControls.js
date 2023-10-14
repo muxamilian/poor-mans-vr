@@ -98,8 +98,10 @@ async function run() {
   let video_index = 0;
   window.actual_videos.forEach((item) => {
     item.play();
-    console.log('Got video with a width of', item.scrollWidth.toString(), 'and a height of', item.scrollHeight.toString(), 
-      'css width', window.videos_to_change[video_index].style.width.toString(), 'css height', window.videos_to_change[video_index].style.height.toString());
+    var debug_str = 'Got video with a width of ' + item.scrollWidth.toString() + ' and a height of ' + item.scrollHeight.toString() + 
+    ' css width ' + window.videos_to_change[video_index].style.width.toString() + ' css height ' + window.videos_to_change[video_index].style.height.toString();
+    console.log(debug_str);
+    document.querySelector("body").insertAdjacentHTML("beforeend", '<div style="display:none;">'+debug_str+'</div>');
     window.videos_to_change_widths.push(item.scrollWidth);
     window.videos_to_change_heights.push(item.scrollHeight);
     if (window.videos_to_change[video_index].style.height.length == 0) {
