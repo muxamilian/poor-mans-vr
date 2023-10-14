@@ -11,7 +11,7 @@ This is especially useful for ultra-wide videos, which can capture a scene using
 # Demo on how to embed into a website (check out source code, very minimalistic)
 [https://muxamilian.github.io/poor-mans-vr/index_text.html](https://muxamilian.github.io/poor-mans-vr/index_text.html)
 
-To use this tech on your website, you have to include the js and css files like in the demo above. Then you have to some divs on your website, which display the content you want to benefit from the VR effect. Do this according to `index_text.html`. Finally, apply some style to the element(s) with the class `video-to-change`. 
+To use this tech on your website, you have to include the js and css files like in the demo above. Then you have to add some divs on your website, which display the content which you want to benefit from the VR effect. Do this according to `index_text.html`. Finally, apply some style to the element(s) with the class `video-to-change`. 
 
 # Acknowledgements
 Some code is recycled from [https://github.com/justadudewhohacks/face-api.js](https://github.com/justadudewhohacks/face-api.js)
