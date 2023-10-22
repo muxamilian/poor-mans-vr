@@ -13,5 +13,9 @@ This is especially useful for ultra-wide videos, which can capture a scene using
 
 To use this tech on your website, you have to include the js and css files like in the demo above. Then you have to add some divs on your website, which display the content which you want to benefit from the VR effect. Do this according to `index_text.html`. Finally, apply some style to the element(s) with the class `video-to-change`. 
 
+# Discussion
+
+Also check out the [discussion on reddit (r/webdev)](https://www.reddit.com/r/webdev/comments/177pton/a_poor_mans_vr_front_camera_tensorflowjs/). 
+
 # Acknowledgements
 Some code is recycled from [https://github.com/justadudewhohacks/face-api.js](https://github.com/justadudewhohacks/face-api.js)
